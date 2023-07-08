@@ -1,0 +1,47 @@
+$Primary: #63b6ff;
+$Secondary: #ededed;
+$margin0-16: 0 16px;
+$H40: 40px;
+$fontWeight: 600;
+
+.main {
+    margin-top: 8%;
+}
+
+h2 {
+    padding: 1%;
+}
+
+
+.example-form {
+    margin: 30px;
+}
+
+.example-full-width {
+    width: 30%;
+    margin-right: 30px;
+}
+
+.button-card {
+    margin: 1%;
+    width: 20%;
+}
+
+
+.tamanho {
+    background-color: $Secondary;
+    height: 10.5rem;
+    margin: 30px;
+}
+
+@media screen and (min-width:280px) and (max-width:800px) {
+    .main {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (min-width:800px)and (max-width: 1000px) {
+    .main {
+        margin-top: 15%;
+    }
+}

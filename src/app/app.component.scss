@@ -1,0 +1,65 @@
+$Primary: #4392d7;
+$Secondary: #ededed;
+$margin0-16: 0 16px;
+$H40: 40px;
+$fontWeight: 600;
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: $Primary;
+    color: white;
+    font-weight: $fontWeight;
+}
+
+.toolbar img {
+    margin: $margin0-16;
+}
+
+.toolbar #twitter-logo {
+    height: $H40;
+    margin: 0 8px;
+}
+
+.toolbar #youtube-logo {
+    height: $H40;
+    margin: $margin0-16;
+}
+
+.toolbar #twitter-logo:hover,
+.toolbar #youtube-logo:hover {
+    opacity: 0.8;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.selected {
+    font-weight: bold;
+    color: $Secondary;
+}
+
+.tamanho {
+    background-color: $Secondary;
+    height: 10.5rem;
+    margin: 30px;
+}
+
+.link {
+    margin-right: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: $Secondary;
+    font-weight: 400;
+}
+
+.link:hover {
+    font-size: 1.5rem;
+    color: white;
+}

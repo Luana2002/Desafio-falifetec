@@ -1,0 +1,67 @@
+<div class="main">
+    <h1 class="d-flex justify-content-center fw-semibold fs-2">Turmas</h1>
+    <div class="card mx-4">
+        <h2 class="titulo-card">Cadastro de Turmas</h2>
+        <div class="container">
+            <div class="row m-3">
+                <div class="col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Número da Sala</label>
+                    <input type="text" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock"
+                        placeholder="Sala 210">
+                </div>
+                <div class="col">
+                    <label for="floatingSelect" class="mb-2">Letra da turma</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecione</option>
+                        <option *ngFor="let item of letra" id={{item.id}}>{{item.letra}}</option>
+                    </select>
+                </div>
+                <div class=" col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Professor(a)</label>
+                    <input type="tel" id="inputPassword5" class="form-control" placeholder="Fulano..." />
+                </div>
+                <div class=" col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Telefone</label>
+                    <input type="tel" id="inputPassword5" class="form-control" placeholder="(XX) XXXXX-XXXX" />
+                </div>
+                <div class=" col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Quantidade de
+                        alunos</label>
+                    <input type="number" id="inputPassword5" class="form-control" placeholder="Ex. 348" />
+                </div>
+            </div>
+        </div>
+        <div class="m-4 d-flex justify-content-end">
+            <button type="button" class="btn btn-primary me-2">Salvar</button>
+            <button type="button" class="btn btn-outline-secondary">Limpar</button>
+        </div>
+    </div>
+
+    <div class="card  m-4  p-3">
+        <h2>Lista de Turmas</h2>
+        <table class="table table-striped table-hover table table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome da Turma</th>
+                    <th scope="col">Escola</th>
+                    <th scope="col">Quantidade de alunos por turma</th>
+                    <th scope="col">Professor</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of turma">
+                    <th scope="row">{{item.id}}</th>
+                    <td>{{item.letra}}</td>
+                    <td>{{item.escola}}</td>
+                    <td>{{item.quantidadeAlunosTurma}}</td>
+                    <td>{{item.professor}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer class="p-2 d-flex justify-content-center">
+    Copyright 2023 © - Desafio - Luana Rodrigues
+</footer>

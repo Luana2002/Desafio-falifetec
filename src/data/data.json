@@ -1,0 +1,109 @@
+{
+  "escolas": [
+    {
+      "_id": 1,
+      "nomeEscola": "Escola Magistral",
+    "quatidadeAluno": "400",
+    "cidade": "Brasília",
+    "telefone": "(61)94783-4734"
+    },
+    {
+     "_id": 2,
+      "nomeEscola": "Escola Classe 413 norte",
+    "quatidadeAluno": "340",
+    "cidade": "Brasília",
+    "telefone": "(61)98363-5764"
+  },{
+   "_id": 3,
+      "nomeEscola": "Escola Santo Antonio",
+    "quatidadeAluno": "600",
+    "cidade": "Fortaleza",
+    "telefone": "(85)99378-9734"
+  },{
+   "_id": 4,
+      "nomeEscola": "Escola Marista",
+    "quatidadeAluno": "400",
+    "cidade": "Curitiba",
+    "telefone": "(41)95793-4794"
+  }
+  ],
+  "turmas": [
+    {
+      "id": 1,
+      "letra": "A",
+    "quantidadeAlunosTurma": 40,
+    "professor": "Isabella",
+    "escola":"Escola Classe 413 norte"
+    },
+    {
+      "id": 1,
+      "letra": "C",
+    "quantidadeAlunosTurma": 20,
+    "professor": "Marcos",
+    "escola":"Escola Magistral"
+  },{
+    "id": 1,
+      "letra": "C",
+    "quantidadeAlunosTurma": 15,
+    "professor": "Marcela",
+    "escola":"Escola Magistral"
+  },{
+    "id": 1,
+      "letra": "D",
+    "quantidadeAlunosTurma": 30,
+    "professor": "Francisca",
+    "escola":"Escola Classe 413 norte"
+  },
+  { "id": 1,
+      "letra": "E",
+    "quantidadeAlunosTurma": 28,
+    "professor": "Amanda",
+    "escola":"Escola Marista"
+  },
+    { "id": 1,
+      "letra": "A",
+    "quantidadeAlunosTurma": 32,
+    "professor": "Sheila",
+    "escola":"Escola Santo Antonio"
+  },
+    { "id": 1,
+      "letra": "F",
+    "quantidadeAlunosTurma": 14,
+    "professor": "Fernanda",
+    "escola":"Escola Marista"
+  }
+  ],
+  "letraTurma":[
+  {
+    "id":1,
+  "letra": "A"
+  },{
+    "id":2,
+  "letra": "B"
+  },{
+    "id":3,
+  "letra": "C"
+  },{
+    "id":4,
+  "letra": "D"
+  },{
+    "id":5,
+  "letra": "E"
+  },{
+    "id":6,
+  "letra": "F"
+  },{
+    "id":7,
+  "letra": "G"
+  },{
+    "id":8,
+  "letra": "H"
+  },{
+    "id":9,
+  "letra": "I"
+  },{
+    "id":10,
+  "letra": "J"
+  }
+  ]
+}

@@ -1,0 +1,59 @@
+<div class="main">
+    <h1 class="d-flex justify-content-center fw-semibold fs-2">Escolas</h1>
+    <div class="card mx-4">
+        <h2 class="titulo-card">Cadastro de Escolas</h2>
+        <div class="container">
+            <div class="row m-3">
+                <div class="col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Nome da escola</label>
+                    <input type="text" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock"
+                        placeholder="Escola Classe 416 sul">
+                </div>
+                <div class="col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Cidade/UF</label>
+                    <input type="text" id="inputPassword5" class="form-control" placeholder="Ex. Brasília/DF" />
+                </div>
+                <div class=" col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Telefone</label>
+                    <input type="tel" id="inputPassword5" class="form-control" placeholder="(XX) XXXXX-XXXX" />
+                </div>
+                <div class=" col">
+                    <label for="inputPassword5" class="form-label d-flex justify-content-start">Quantidade de
+                        alunos</label>
+                    <input type="number" id="inputPassword5" class="form-control" placeholder="Ex. 348" />
+                </div>
+            </div>
+        </div>
+        <div class="m-4 d-flex justify-content-end">
+            <button type="button" class="btn btn-primary me-2">Salvar</button>
+            <button type="button" class="btn btn-outline-secondary">Limpar</button>
+        </div>
+    </div>
+
+    <div class="card  m-4  p-3">
+        <h2>Lista de Escolas</h2>
+        <table class="table table-striped table-hover table table-responsive table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">ID</th>
+                    <th scope="col">Nome da Escola</th>
+                    <th scope="col">Cidade/UF</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Quantidade de alunos</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of lista">
+                    <th scope="row">{{item._id}}</th>
+                    <td>{{item.nomeEscola}}</td>
+                    <td>{{item.cidade}}</td>
+                    <td>{{item.quatidadeAluno}}</td>
+                    <td>{{item.telefone}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<footer class="p-2 d-flex justify-content-center">
+    Copyright 2023 © - Desafio - Luana Rodrigues
+</footer>

@@ -1,0 +1,21 @@
+$Primary: #63b6ff;
+$Secondary: #ededed;
+$margin0-16: 0 16px;
+$H40: 40px;
+$fontWeight: 600;
+
+.main {
+    margin-top: 8%;
+}
+
+@media screen and (min-width:280px) and (max-width:800px) {
+    .main {
+        margin-top: 25%;
+    }
+}
+
+@media screen and (min-width:800px)and (max-width: 1000px) {
+    .main {
+        margin-top: 15%;
+    }
+}
